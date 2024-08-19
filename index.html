@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="favicon.png">
+    <title>Calculator</title>
+  </head>
+  <body class="bg-black text-white px-2">
+    <div class="inline-grid grid-flow-row grid-rows-1 gap-2">
+      <div class="screen js-screen h-20 text-6xl">0</div>
+      <div>
+        <button
+          class="js-clear bg-gray-300 text-black px-2.5 py-1 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-100"
+        >
+          Clear
+        </button>
+        <button
+          class="js-ans bg-gray-300 text-black px-2.5 py-1 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-100"
+        >
+          ans
+        </button>
+        <button
+          class="bg-orange-500 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-orange-300"
+          onclick="
+      calculation1('/');
+      "
+        >
+          /
+        </button>
+      </div>
+      <div>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+      calculation1('7');
+      "
+        >
+          7
+        </button>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+      calculation1('8');
+      "
+        >
+          8
+        </button>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+      calculation1('9');
+      "
+        >
+          9
+        </button>
+        <button
+          class="bg-orange-500 h-9 w-9 text-base rounded-full mr-1 hover:opacity-80 active:bg-orange-300"
+          onclick="
+      calculation1('*');
+      "
+        >
+          &#10005;
+          <!--X-->
+        </button>
+      </div>
+      <div>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+        calculation1('4');
+      "
+        >
+          4
+        </button>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+      calculation1('5');
+      "
+        >
+          5
+        </button>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+      calculation1('6');
+      "
+        >
+          6
+        </button>
+        <button
+          class="bg-orange-500 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-orange-300"
+          onclick="
+      calculation1('-');
+      "
+        >
+          &#8722;
+        </button>
+      </div>
+      <div>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+        calculation1 ('1');
+      "
+        >
+          1
+        </button>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+        calculation1 ('2');
+      "
+        >
+          2
+        </button>
+        <button
+          class="bg-gray-600 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+        calculation1 ('3');
+      "
+        >
+          3
+        </button>
+        <button
+          class="bg-orange-500 h-9 w-9 text-xl rounded-full mr-1 hover:opacity-80 active:bg-orange-300"
+          onclick="
+          calculation1('+')
+        "
+        >
+          &#x2b;
+          <!-- + -->
+        </button>
+      </div>
+      <div>
+        <button
+          class="bg-gray-600 px-6 py-1 text-xl rounded-full mr-1.5 hover:opacity-80 active:bg-gray-400"
+          onclick="
+      calculation1('0');
+      "
+        >
+          0
+        </button>
+        <button
+          class="bg-gray-600 px-6 py-1 text-xl rounded-full mr-1 hover:opacity-80 active:bg-gray-400"
+          onclick="
+      calculation1('.');
+      "
+        >
+          .
+        </button>
+        <button
+          class="js-calc bg-orange-500 h-9 w-9 text-xl rounded-full ml-0.5 hover:opacity-80 active:bg-orange-300"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
